@@ -1,9 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.pomodoro-time {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
 .bg-container {
-    text-align: center;
-    margin: 40px;
-    padding: 40px;
+    margin: 20px;
+    padding: 20px;
 }
 
 .button-container {
@@ -11,42 +28,42 @@
     padding: 20px;
 }
 
-.start-button {
+.start-button, .stop-button, .reset-button, .short-break-button, .long-break-button {
     color: white;
-    background-color: green;
     margin: 8px;
-    padding: 3px;
+    padding: 10px 20px;
+    border: none;
     border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.start-button {
+    background-color: green;
 }
 
 .stop-button {
-    color: white;
     background-color: red;
-    margin: 8px;
-    padding: 3px;
-    border-radius: 5px;
 }
 
 .reset-button {
-    color: white;
     background-color: grey;
-    margin: 8px;
-    padding: 3px;
-    border-radius: 5px;
 }
 
-.stort-time-button {
-    color: white;
+.short-break-button {
     background-color: blue;
-    margin: 8px;
-    padding: 3px;
-    border-radius: 5px;
 }
 
-.long-time-button {
-    color: white;
+.long-break-button {
     background-color: #b4a5d2;
-    margin: 8px;
-    padding: 3px;
-    border-radius: 5px;
+}
+
+.main-heading {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.display-time {
+    font-size: 48px;
+    margin-bottom: 20px;
 }
